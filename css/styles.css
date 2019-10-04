@@ -3,66 +3,102 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.container-fluid{
-    height: 100%;
-    /* overflow: hidden; */
-    text-align: center;
-    margin:0 auto;
-    padding-top:100px;
-    padding-block-end: initial;
-  }
-  
-  .svg-wrapper {
-    height: 60px;
-      margin: 0 auto;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 320px;
-  }
-  
-  .shape {
-    fill: transparent;
+.container-fluid {
+  height: 100%;
+  /* overflow: hidden; */
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 100px;
+  padding-block-end: initial;
+}
+
+.svg-wrapper {
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #19f6e8;
+}
+
+.text {
+  color: #fff;
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  position: relative;
+  top: -48px;
+}
+
+@keyframes draw {
+  0% {
     stroke-dasharray: 140 540;
     stroke-dashoffset: -474;
     stroke-width: 8px;
-    stroke: #19f6e8;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+}
+.price {
+  position: relative;
+  width: 50%;
+}
+.price img {
+  width: 100%;
+  height: auto;
+}
+/* Style the button and place it in the middle of the container/image */
+.price .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.price .btn:hover {
+  background-color: black;
+}
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
   }
   
-  .text {
-    color: #fff;
-    font-family: 'Roboto Condensed';
-    font-size: 22px;
-    letter-spacing: 8px;
-    line-height: 32px;
-    position: relative;
-    top: -48px;
-  }
-  
-  @keyframes draw {
-    0% {
-      stroke-dasharray: 140 540;
-      stroke-dashoffset: -474;
-      stroke-width: 8px;
-    }
-    100% {
-      stroke-dasharray: 760;
-      stroke-dashoffset: 0;
-      stroke-width: 2px;
-    }
-  }
-  
-  .svg-wrapper:hover .shape {
-    -webkit-animation: 0.5s draw linear forwards;
-    animation: 0.5s draw linear forwards;
-  }
-  .card-body {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    padding: 1.25rem;
-  }
-  
-  .card-title {
-    margin-bottom: 0.75rem;
+  img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
   }
   
