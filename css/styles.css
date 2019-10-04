@@ -1,4 +1,4 @@
-body {
+.background {
   background-image: url("/asserts/background/background1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,4 +55,13 @@ body {
   .svg-wrapper:hover .shape {
     -webkit-animation: 0.5s draw linear forwards;
     animation: 0.5s draw linear forwards;
+  }
+  .card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+  }
+  
+  .card-title {
+    margin-bottom: 0.75rem;
   }
