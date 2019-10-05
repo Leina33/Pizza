@@ -28,4 +28,6 @@ $("button#submit").click(function(event){
  var toppings= ["pepperoni","mushroom","onions","bacon","extra cheese", "Green peppes", "spinach"];
 
  //prototypes
- 
+ order.prototype.print = function (){
+     console.log(Which + size do you want)
+ }
