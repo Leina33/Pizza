@@ -32,15 +32,18 @@
           <div class="card-body">
             <form class="" id="form">
               <div class="form-group">
-                <label for="">Enter size</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="size"
-                  onkeyup="allLetters(this)"
-                  name="size"
-                />
+                <div id="size">
+                    <label for="">Enter size</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="size"
+                      onkeyup="allLetters(this)"
+                      name="size"
+                    />
+                </div>
               </div>
+              <button type="submit" form="form1" value="Submit">Submit</button>
             </form>
           </div>
         </div>
@@ -53,15 +56,18 @@
           <div class="card-body">
             <form class="" id="form">
               <div class="form-group">
-                <select name="crust">
-                  <option value="Cripsy">Cripsy</option>
-                  <option value="stuffed">Stuffed</option>
-                  <option value="Gluten-free">Gluten-free</option>
-                  <option value ="cheese Filled">cheese Filled</option>
-                  <option value = "deep">deep</option>
-                  <option value ="thin">Thin</option>
-                </select>
+                <div id="crust">
+                    <select name="crust">
+                        <option value="Cripsy">Cripsy</option>
+                        <option value="stuffed">Stuffed</option>
+                        <option value="Gluten-free">Gluten-free</option>
+                        <option value ="cheese Filled">cheese Filled</option>
+                        <option value = "deep">deep</option>
+                        <option value ="thin">Thin</option>
+                      </select>
+                </div>
               </div>
+              <button type="submit" form="form1" value="Submit">Submit</button>
             </form>
           </div>
         </div>
@@ -69,20 +75,23 @@
       <div class="col-sm-4">
         <div class="card" id="card">
           <div class="card-title">
-            <h2>Choose size</h2>
+            <h2>Choose Toppings</h2>
           </div>
           <div class="card-body">
             <form class="" id="form">
               <div class="form-group">
-                <label for="">Enter Toppings</label>
-                <input
-                  type="text"
-                  class="form-control"
-                  id="size"
-                  onkeyup="allLetters(this)"
-                  name="size"
-                />
+                <div id="toppings">
+                    <label for="">Enter Toppings</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="size"
+                      onkeyup="allLetters(this)"
+                      name="size"
+                    />
+                </div>
               </div>
+              <button type="submit" form="form1" value="Submit">Submit</button>
             </form>
           </div>
         </div>
@@ -158,19 +167,19 @@
         </ul>
     </div>
     <div class ="row">
-            <div class="column-md-4">
+            <div class="column-md-6">
                 <div class ="add">
                         <div class="card" id="card">
                                 <div class ="card-title">
                                     <h2>ADD</h2>
                                 </div>
-        <button style="font-size:24px">check <i class="fa fa-shopping-cart"></i></button>
+        <button style="font-size:24px">click  <i class="fa fa-shopping-cart"></i></button>
         
         
                             </div>
                         </div>
                 </div>
-            <div class="column-md-4">
+            <div class="column-md-6">
                     <div class="card" id="card">
                         <div class ="card-title">
                             <h2>Shopping Cart</h2>
