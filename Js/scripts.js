@@ -28,6 +28,21 @@ $("button#submit").click(function(event){
  var toppings= ["pepperoni","mushroom","onions","bacon","extra cheese", "Green peppes", "spinach"];
 
  //prototypes
- order.prototype.print = function (){
-     console.log(Which + size do you want)
+ order.prototype.price = function(){
+     if (this.size === [0]){
+         this.price +=1000;
+     }
+     else if (this.size === size[1]){
+         this.price = +1500;
+
+     }
+     else (this.size === [2])
+ }
+ console.log(this.size[0])
+ function submit(){
+     var size = prompt("please enter the size of pizza");
+     if (size != null){
+         document.getElementById("#p").innerHTML
+         "enter your pizza size in box above"
+     }
  }
