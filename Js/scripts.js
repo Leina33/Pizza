@@ -1,9 +1,15 @@
-// let allLetters
-// (funtion ($){
-//     allLetters = (letters) = > {
-//         $(#size).html(allLetters)
-//     }
-// })(jQuery)
+//contacts 
+$(document).ready(function() {
+    $("form").submit(function(event) {
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var message = $("#message").val();
+      event.preventDefault();
+      if (name && email != "") {
+        alert("Thank you " + name + "thank you for reaching us");
+      }
+    });
+  });
 
 $(document).ready(function(){
 $("button#submit").click(function(event){
@@ -46,3 +52,5 @@ $("button#submit").click(function(event){
          "enter your pizza size in box above"
      }
  }
+
+ 
