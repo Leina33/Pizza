@@ -6,13 +6,13 @@ $(document).ready(function() {
       var message = $("#message").val();
       event.preventDefault();
       if (name && email != "") {
-        alert("Thank you " + name + "thank you for reaching us");
+        alert("Thank you "  + name +  " for buying with us");
       }
     });
   });
 
 $(document).ready(function(){
-$("button#submit").click(function(event){
+$("form").submit(function(event){
     event.preventDefault();
     var size = $("#size").val;
     var crust =$("#crust").val;
@@ -46,11 +46,5 @@ $("button#submit").click(function(event){
  }
  console.log(this.size[0])
  function submit(){
-     var size = prompt("please enter the size of pizza");
-     if (size != null){
-         document.getElementById("#p").innerHTML
-         "enter your pizza size in box above"
-     }
- }
 
  
