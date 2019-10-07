@@ -16,7 +16,7 @@ JQUERY
 dominickrutto@gmail.com
 ### License
 Leina33
-Copyright (c) 2019 **DOMINIC RUTTO**ion Requirements
+Copyright (c) 2019 **DOMINIC RUTTO**
 * Clone or download and unzip the repository from github,https://github.com/Leina33/Pizza.git
 * You can use this command(git clone mylink)to clone the project to your machine if you have git.
 * cd to the project.

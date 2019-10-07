@@ -1,6 +1,6 @@
 //contacts 
 $(document).ready(function() {
-    $("form").submit(function(event) {
+    $("form1").submit(function(event) {
       var name = $("#name").val();
       var email = $("#email").val();
       var message = $("#message").val();
@@ -47,35 +47,37 @@ $(document).ready(function() {
          this.price +=100;
      }
      else if (this.crust === crust[3]){
-         this.crust +=50;
+         this.price +=50;
      } 
      else if (this.crust === crust[4]){
-         this.crust +=100;
+         this.price +=100;
      }
      else if (this.toppings ===toppings[0]){
-         this.toppings += 100;
+         this.price += 100;
      }
      else if (this.toppings === toppings[1]){
-         this.toppings += 100;
+         this.price += 100;
      }
      else if (this.toppings === toppings[2]){
-         this.toppings +=100;
+         this.price +=100;
      }
      else if (this.toppings === toppings[3]){
-        this.toppings +=100;
+        this.price +=100;
     }
     else if (this.toppings === toppings[4]){
-        this.toppings +=100;
+        this.price +=100;
     }
-    else(this.price === total)
+    return orderTotal
     
  }
  $(document).ready(function(){
-    $("form").submit(function(event){
+    $("button#submit").click(function(event){
         event.preventDefault();
         var size = $("#size").val;
         var crust =$("#crust").val;
         var toppings =$("toppings").val;
+
+        var newPizzaOrder = new Order ()
     
         alert(size + crust + topping);
     });
