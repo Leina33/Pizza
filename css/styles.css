@@ -132,4 +132,14 @@ img {
   .contacts {
     text-align: center;
   }
-  
+  .cart{
+    text-align:center;
+    text-underline-position: below;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  #button{
+    margin:auto;
+    display:block;
+    align-content: center;
+  }

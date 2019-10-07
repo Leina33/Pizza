@@ -44,7 +44,6 @@ $("form").submit(function(event){
      }
      else (this.size === [2])
  }
- console.log(this.size[0])
- function submit(){
+
 
  
