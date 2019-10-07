@@ -138,8 +138,6 @@ img {
     font-size: 32px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
-  #button{
-    margin:auto;
-    display:block;
-    align-content: center;
-  }
+h2{
+  text-align: center;
+}
