@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <!--start of forms classes  -->
+    <!--start of forms   -->
     <form>
       <div class = "pizza">
           <div class="row">
@@ -89,22 +89,22 @@
                           <label for="">click </label>
                           <label class="container"
                             >Pepperoni
-                            <input type="checkbox" checked="checked" />
+                            <input type="checkbox"   id = "peporoni">
                             <span class="checkmark"></span>
                           </label>
                           <label class="container"
                             >Mushroom
-                            <input type="checkbox" />
+                            <input type="checkbox" id= "mushroom" />
                             <span class="checkmark"></span>
                           </label>
                           <label class="container"
                             >Sausage
-                            <input type="checkbox" />
+                            <input type="checkbox" id ="Sausage" />
                             <span class="checkmark"></span>
                           </label>
                           <label class="container"
                             >Bacon
-                            <input type="checkbox" />
+                            <input type="checkbox" id= "Bacon" />
                             <span class="checkmark"></span>
                           </label>
                         </div>
@@ -123,7 +123,7 @@
                     </div>
                     <div class = "card-body">
                       <!-- <form class ="" id ="form"> -->
-                        <!-- <div class = "form-group"> -->
+                        <div class = "form-group">
                           <div class= "Quantity">
                               <label for="">Enter Number</label>
                               <input
@@ -133,7 +133,7 @@
                                 name="Quantity"
                               />
                           </div>
-                        <!-- </div> -->
+                        </div> 
                       <!-- </form> -->
                     </div>
                   </div>
@@ -144,17 +144,19 @@
                       <h2>ORDER</h2>
                     </div>
                     <div class ="card-body">
-                      <!-- <div class ="form-group"> -->
+                      <div class ="form-group">
                         <div id = "submit">
-                            <button type="button" id ="submit" style="background-color:sandybrown;margin:auto;display:block">SUBMIT</button>
-                        <!-- </div> -->
+                           <button type="button" id="submit" style="background-color:sandybrown;margin:auto;display:block">SUBMIT</button>
+                        </div> 
+                        
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
       </div>
-    </form>
+    </form>    
+    <!-- end of form -->
     <div class="text-center">
       <h2 class="heading center">Hot views</h2>
       <img src="asserts/background/icon.png" />
@@ -227,23 +229,24 @@
       <div class="row justify-content-center">
         <h1>CONTACT US</h1>
       </div>
-
-      <div class ="form1">
-              <input id="name" placeholder="name" value="" type="text" />
-              <input id="email" placeholder="email" value="" type="text" />
-              <div class="message">
-                <!-- <label for ="message">Mesage</label> -->
-                <textarea
-                  id="message"
-                  name="message"
-                  aria-valuemax=""
-                  placeholder="write message here..."
-                  style="height:200px;  width:60%;"
-                ></textarea
-                ><br />
-                <!-- <button type="submit" class="btn btn-default">SUBMIT</button> -->
-              </div>
-      </div>
+<form>
+    <div class ="form1">
+        <input id="name" placeholder="name" value="" type="text" />
+        <input id="email" placeholder="email" value="" type="text" />
+        <div class="message">
+          <!-- <label for ="message">Mesage</label> -->
+          <textarea
+            id="message"
+            name="message"
+            aria-valuemax=""
+            placeholder="write message here..."
+            style="height:200px;  width:60%;"
+          ></textarea
+          ><br />
+           <button type="submit" class="btn btn-default">SUBMIT</button> 
+        </div>
+</div>
+</form>
     </div>
   </body>
 </html>
