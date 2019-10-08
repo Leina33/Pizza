@@ -144,3 +144,101 @@ h2{
 form{
   background-color:gainsboro;
 }
+
+
+
+
+
+
+
+
+
+
+.card-body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+.card-title {
+  margin-bottom: 0.75rem;
+}
+.price {
+  position: relative;
+  width: 50%;
+}
+.price img {
+  width: 100%;
+  height: auto;
+}
+/* Style the button and place it in the middle of the container/image */
+.price .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color:rebeccapurple;
+  color: white;
+  font-size: 10px;
+  padding: 12px 24px;
+  text-align: end;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.price .btn:hover {
+  background-color: black;
+}
+img {
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+  }
+  
+  img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+  }
+  .proceed{
+      text-align:center;
+      font-size:32px;
+      text-underline-position:below;
+
+  }
+  .instructions{
+      font-size: 24px;
+      justify-content: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-style: italic;
+      text-align: center;
+  }
+  .add {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color:blue;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius:10;
+    
+  }
+  .contacts {
+    text-align: center;
+  }
+  .cart{
+    text-align:center;
+    text-underline-position: below;
+    font-size: 32px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+h2{
+  text-align: center;
+}
+form{
+  background-color:gainsboro;
+}
