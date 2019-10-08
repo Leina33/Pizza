@@ -1,15 +1,16 @@
 //contacts
 $(document).ready(function() {
-  $("form").submit(function(event) {
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var message = $("#message").val();
-    event.preventDefault();
-    if (name && email && message != "") {
-      alert("Thank you " + name + " for buying with us");
-    }
+    $("form").submit(function(event) {
+      var name = $("#name").val();
+      var email = $("#email").val();
+      var message = $("#message").val();
+      event.preventDefault();
+      if (name && email != "") {
+        alert("Thank you " + name + "thank you for reaching us");
+      }
+    });
   });
-});
+  
 
 $(document).ready(function() {
   $("#submit").click(function(event) {
